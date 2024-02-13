@@ -1,13 +1,54 @@
 body{
     background-color: aliceblue;
     padding: 20px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container{
+    margin-top: 10px;
     max-width: 400px;
-    margin: auto;
-    background-color: antiquewhite;
+    background-color: rgb(238, 238, 238);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 4px rgb(114, 114, 114);
+}
+
+#header img{
+    border-radius: 30px;
+    height: 435px;
+    margin-bottom: 10px;
+    width: auto;
+
+
+}
+
+label{
+    font-size: 20px;
+}
+
+#respuesta{
+    margin-bottom: 10px;
+}
+
+#resultado{
+    margin-bottom: 10px;
+}
+
+#botonlista{
+    margin-bottom: 10px;
+}
+
+#lista{
+    font-size: 15px;
+}
+
+footer{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: bottom;
 }
