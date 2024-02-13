@@ -48,7 +48,7 @@ function mostrarlista() {
         lista.style.display = "block";
         mostrarNumeros();
     } else {
-        lista.style.display = "none"; // Ocultar el listado si está mostrándose
+        lista.style.display = "none";
     }
 }
 

@@ -52,3 +52,7 @@ footer{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     float: bottom;
 }
+
+h1{
+    text-shadow: 0 0 1px black;
+}
