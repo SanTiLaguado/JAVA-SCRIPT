@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+*{
+    font-family: "Lexend", sans-serif;
+}
+
+body{
+    background-color: aliceblue;
+    padding: 20px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ h1{
+    text-shadow: 0 0 1px;
+    font-size: 40px;
+    margin-bottom: 0px;
+ }
+#Container{
+    margin-top: 35px;
+    background-color: rgb(186, 187, 188);
+    height: 200px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    border-radius: 20px;
+    box-shadow: 0 0 5px;
+}
+
+#secuencia{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#subsecuencia{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+label{
+    font-size:18px;
+    margin-right: 10px;
+
+}
+
+input{
+    height: 20px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.form{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.boton{
+    border-radius: 3px;
+    border: 1px solid black;
+    font-size: 15px;
+}
+
+#resultado{
+    width: 450px;
+    font-size: 18.5px;
+    text-align: center;
+    margin-top: 15px;
+}

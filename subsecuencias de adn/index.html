@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema ADN</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>SISTEMA DE VALIDACION DE SUBCADENAS DE ADN</h1>
+    <p>Policia Nacional de Colombia</p>
+<div id="Container">
+    <form id="secuencia">
+        <div class="form">
+            <label for="numero">Ingrese secuencia: </label>
+            <input type="text" class="form-control" id="secuenciaIngresada" required>
+        </div>
+    </form>
+    <form id="subsecuencia">
+        <div class="form">
+            <label for="numero">Ingrese subsecuencia: </label>
+            <input type="text" class="form-control" id="subsecuenciaIngresada" required>
+        </div>
+        <button type="button" class="boton" onclick="buscar()" >Buscar Coincidencia</button>
+    </form>
+    <div id="resultado"></div>
+</div>
+</body>
+</html>
