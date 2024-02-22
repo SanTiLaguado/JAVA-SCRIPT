@@ -78,29 +78,30 @@ const calcularTotalFactura = (productos) => {
         });
 };
 
-// Función principal para obtener información de la factura con promesas
-const obtenerInformacionFactura = (facturaId) => {
-    return new Promise((resolve, reject) => {
+// Función principal para obtener información de la factura con async await
+
+async function obtenerInformacionFactura(facturaId) {
+    try {
         const factura = facturas.find(f => f.id === facturaId);
-        if (factura) {
-            getCliente(factura.clienteId)
-                .then(cliente => {
-                    return calcularTotalFactura(factura.productos)
-                        .then(total => {
-                            factura.total = total;
-                            resolve({
-                                factura,
-                                cliente,
-                                productos: factura.productos
-                            });
-                        });
-                })
-                .catch(reject);
-        } else {
-            reject("Factura con el ID " + facturaId + " no existe");
+        if (!factura) {
+            throw new Error("Factura con el ID " + facturaId + " no existe");
         }
-    });
+
+        const cliente = await getCliente(factura.clienteId);
+        const total = await calcularTotalFactura(factura.productos);
+
+        factura.total = total;
+
+        return {
+            factura,
+            cliente,
+            productos: factura.productos
+        };
+    } catch (error) {
+        throw error;
+    }
 };
+
 
 // Ejercicio: Obtener información de la factura con ID 1001
 const facturaId = 1001;
