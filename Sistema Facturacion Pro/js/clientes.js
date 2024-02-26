@@ -1,5 +1,16 @@
 const listaClientes=[];
 
+const loadclientes= async ()=>{
+    try{
+        const respuesta = await fetch('ENLACE')
+        if(!respuesta.ok){
+            throw new Error('Error al cargar clientes. Estado: '+respuesta.status)
+        }
+        const clientes=await respuesta.json();
+        listaClientes.push(...clientes)
+        
+    }catch(error){console.error("Error al Cargar Clientes", error.message)}
+}
 const cargarClientes=()=>{   
     for(let i=0;i<=10;i++){
         const nuevoCliente={
