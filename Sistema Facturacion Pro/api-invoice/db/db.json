@@ -1,0 +1,138 @@
+{
+  "clientes": [
+    {
+      "id": "1",
+      "nombre": "Camilo Perez",
+      "edad": 25,
+      "email": "cperez@gmail.com"
+    },
+    {
+      "id": "2",
+      "nombre": "Juan Gomez",
+      "edad": 30,
+      "email": "jgomez@gmail.com"
+    },
+    {
+      "id": "3",
+      "nombre": "Daniel Ortiz",
+      "edad": 26,
+      "email": "dortiz@gmail.com"
+    },
+    {
+      "id": "4",
+      "nombre": "Marcelo Holgin",
+      "edad": 26,
+      "email": "mholgin@gmail.com"
+    },
+    {
+      "id": "5",
+      "nombre": "Sandra Moreno",
+      "edad": "35",
+      "email": "smoreno@gmail.com"
+    },
+    {
+      "id": "6",
+      "nombre": "Celina Torres",
+      "edad": "35",
+      "email": "ctorres@gmail.com"
+    },
+    {
+      "id": "7",
+      "nombre": "Diego Rangel",
+      "edad": "45",
+      "email": "drangel@gmail.com"
+    },
+    {
+      "id": "8",
+      "nombre": "Santiago Laguado Osorio",
+      "edad": "19",
+      "email": "santi@gmail.com"
+    },
+    {
+      "id": 9,
+      "nombre": "oscar",
+      "edad": "25",
+      "email": "oscar@gmail"
+    }
+  ],
+  "productos": [
+    {
+      "codigo": "P001",
+      "descripcion": "Producto1",
+      "precio": 20,
+      "id": "83bb"
+    },
+    {
+      "codigo": "P002",
+      "descripcion": "Producto2",
+      "precio": 15.5,
+      "id": "05f7"
+    }
+  ],
+  "facturas": [
+    {
+      "id": "1",
+      "fecha": "2024-02-23",
+      "cliente": 1,
+      "itemsfactura": [
+        {
+          "producto": "P001",
+          "cantidad": 2
+        },
+        {
+          "producto": "P002",
+          "cantidad": 1
+        }
+      ],
+      "totalFactura": 55.5
+    },
+    {
+      "id": "2",
+      "fecha": "2024-02-24",
+      "cliente": 2,
+      "itemsfactura": [
+        {
+          "producto": "P001",
+          "cantidad": 3
+        },
+        {
+          "producto": "P002",
+          "cantidad": 2
+        }
+      ],
+      "totalFactura": 86.5
+    },
+    {
+      "id": "3",
+      "fecha": "2024-02-24",
+      "cliente": 3,
+      "itemsfactura": [
+        {
+          "producto": "P001",
+          "cantidad": 3
+        },
+        {
+          "producto": "P002",
+          "cantidad": 2
+        }
+      ],
+      "totalFactura": 86.5
+    },
+    {
+      "id": "4",
+      "fecha": "2024-02-23",
+      "cliente": 4,
+      "itemsfactura": [
+        {
+          "producto": "P001",
+          "cantidad": 2
+        },
+        {
+          "producto": "P002",
+          "cantidad": 1
+        }
+      ],
+      "totalFactura": 55.5
+    }
+  ]
+}

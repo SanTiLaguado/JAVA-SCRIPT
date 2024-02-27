@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',()=>{
-    cargarClientes();
+    loadClientes();
     cargarFormularioClientes();
     cargarFormularioProductos();
     cargarProductos();
